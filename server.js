@@ -30,9 +30,9 @@ app.get("*", (req, res) =>
 );
 
 mongoose
-  .connect("mongodb://localhost:27017/", { dbName: "demo_db" })
+  .connect(process.env.DB_URI, { dbName: "demo_db" })
   .then(() => {
     console.log("connected to mongo db successfully");
-    app.listen(4000, "localhost", () => console.log("Listening to port 4000"));
+    app.listen(4000, () => console.log("Listening to port 4000"));
   })
   .catch((err) => console.log(err));
