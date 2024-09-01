@@ -8,7 +8,7 @@
     }
 
     .card {
-        @apply bg-white p-4 rounded-lg shadow-lg max-w-screen-lg mx-auto
+        @apply bg-white p-4 rounded-lg shadow-lg max-w-screen-lg mx-auto;
     }
 
     .title {
